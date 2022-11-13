@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func main() {
 	// veriable declaration
@@ -34,16 +34,27 @@ func main() {
 	// //////////////////////////////////////////////////
 
 	// //////////////////////////////////////////////////
+	// there are two types of arrays in go
+	// 1. fixed length array => [5]string => fixed length of 5
+	// 2. slice => []string => slice is a dynamic array that can grow or shrink
+	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
 	//  use slices to store multiple values
-	cards := []string{"Ace of Diamonds", newCard()}
+	// cards := []string{"Ace of Diamonds", newCard()}
 	// append a new value to the slice
+	// cards = append(cards, "Six of Spades")
+
+	cards := deck{"Ace of Diamonds", newCard()}
 	cards = append(cards, "Six of Spades")
+
+	cards.print()
 
 	// //////////////////////////////////////////////////
 	// iterate over the slice
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
 
 	// fmt.Println(cards)
 }
