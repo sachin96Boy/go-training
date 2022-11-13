@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// veriable declaration
-	var card string = "Ace of Spades"
+	// var card string = "Ace of Spades"
 
 	// lets break down the declaration for more details
 	// //////////////////////////////////////////////////
@@ -27,6 +27,11 @@ func main() {
 	//  card := "Ace of Spades"	 // first time we declare a variable, we need to use the var keyword
 	// card = 5
 	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
+	//  use the function we declared to givethe value of the card
+	card := newCard()
+
 	fmt.Println(card)
 }
 
