@@ -36,8 +36,16 @@ func main() {
 	// //////////////////////////////////////////////////
 	//  use slices to store multiple values
 	cards := []string{"Ace of Diamonds", newCard()}
+	// append a new value to the slice
+	cards = append(cards, "Six of Spades")
 
-	fmt.Println(cards)
+	// //////////////////////////////////////////////////
+	// iterate over the slice
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
+	// fmt.Println(cards)
 }
 
 // //////////////////////////////////////////////////
