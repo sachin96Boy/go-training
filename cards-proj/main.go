@@ -45,8 +45,12 @@ func main() {
 	// append a new value to the slice
 	// cards = append(cards, "Six of Spades")
 
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
+	// cards := deck{"Ace of Diamonds", newCard()}
+	// cards = append(cards, "Six of Spades")
+
+	// //////////////////////////////////////////////////
+	// get new deck of cards with he new function
+	cards := newDeck()
 
 	cards.print()
 
