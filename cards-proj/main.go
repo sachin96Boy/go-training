@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // import "fmt"
 
 func main() {
@@ -52,7 +54,13 @@ func main() {
 	// get new deck of cards with he new function
 	cards := newDeck()
 
-	cards.print()
+	// //////////////////////////////////////////////////
+	// deal the cards
+	hand, remainingCards := deal(cards, 5)
+
+	// cards.print()
+	hand.print()
+	remainingCards.print()
 
 	// //////////////////////////////////////////////////
 	// iterate over the slice
@@ -61,6 +69,15 @@ func main() {
 	// }
 
 	// fmt.Println(cards)
+
+	// //////////////////////////////////////////////////
+	//  type convertion in go => convert a value from one type to another
+	//  here we take a string value and convert it to a byte slice
+	//  if we look at printed value, it's a byte slice
+	greeting := "Hi there!"
+	fmt.Println([]byte(greeting))
+
+	// //////////////////////////////////////////////////
 }
 
 // //////////////////////////////////////////////////
