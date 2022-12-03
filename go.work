@@ -6,4 +6,5 @@ use (
 	./hello
 	./structs
 	./maps
+	./interfaces-go
 )
