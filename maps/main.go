@@ -37,6 +37,17 @@ func main() {
 	delete(emails, "Bob")
 	// //////////////////////////////////////////////////
 
+	// //////////////////////////////////////////////////
+	// iterate over maps
+	// here we use range keyword to iterate over maps
+	// range keyword will return two values
+	// first value will be the key and the second value will be the value
+	// we can use underscore to ignore the key
+	for _, v := range emails {
+		fmt.Println(v)
+	}
+	// //////////////////////////////////////////////////
+
 	// /////////////////////////////////////////////////////////
 	colors := map[string]string{
 		"red":   "#ff0000",
@@ -45,7 +56,7 @@ func main() {
 	// /////////////////////////////////////////////////////////
 	// print the map
 	fmt.Println(colors)
-	fmt.Println(emails)
+	// fmt.Println(emails)
 }
 
 // maps in go
@@ -54,3 +65,17 @@ func main() {
 // maps are like dictionaries in python
 // maps are like objects in javascript
 // maps are like hash tables in other languages
+
+// difference between maps and structs
+// maps are used to represent a collection of related properties
+// maps are used to represent a "thing"
+// in maps all the keys should be the same type and all the values should be the same type
+// in maps all the keys should be unique and indexed
+// in maps the order is not guaranteed
+// structs are used to represent a "person" or "animal" or "user"
+// maps are used to represent a collection of things
+// in struct keys are not indexed
+// in struct the order is guaranteed
+// in struct values can be of different types
+// value of a key in a map can be updated but value of a field in a struct can't be updated
+//
