@@ -7,4 +7,5 @@ use (
 	./structs
 	./maps
 	./interfaces-go
+	./http-go
 )
