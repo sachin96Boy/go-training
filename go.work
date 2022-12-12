@@ -8,4 +8,5 @@ use (
 	./maps
 	./interfaces-go
 	./http-go
+	./channels-go
 )
