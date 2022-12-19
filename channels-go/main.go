@@ -32,7 +32,7 @@ func main() {
 	// }
 
 	// here when we add sleep to the for loop, the program will wait for 5 seconds before checking the next link
-	// but this is a blocking operation, so the program will not check the other links until the 5 seconds are up  
+	// but this is a blocking operation, so the program will not check the other links until the 5 seconds are up
 
 	// fmt.Println(<-c) // receive the link from the channel
 
