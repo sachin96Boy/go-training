@@ -1,0 +1,12 @@
+go 1.19
+
+use (
+	./cards-proj
+	./greeting
+	./hello
+	./structs
+	./maps
+	./interfaces-go
+	./http-go
+	./channels-go
+)

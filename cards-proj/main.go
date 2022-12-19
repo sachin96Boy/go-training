@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// veriable declaration
 	// var card string = "Ace of Spades"
@@ -34,23 +32,76 @@ func main() {
 	// //////////////////////////////////////////////////
 
 	// //////////////////////////////////////////////////
+	// there are two types of arrays in go
+	// 1. fixed length array => [5]string => fixed length of 5
+	// 2. slice => []string => slice is a dynamic array that can grow or shrink
+	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
 	//  use slices to store multiple values
-	cards := []string{"Ace of Diamonds", newCard()}
+	// cards := []string{"Ace of Diamonds", newCard()}
 	// append a new value to the slice
-	cards = append(cards, "Six of Spades")
+	// cards = append(cards, "Six of Spades")
+
+	// cards := deck{"Ace of Diamonds", newCard()}
+	// cards = append(cards, "Six of Spades")
+
+	// //////////////////////////////////////////////////
+	// get new deck of cards with he new function
+	cards := newDeck()
+	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
+	// shuffle the deck
+	cards.shuffle()
+	cards.print()
+	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
+	// get dek of cards from file and print it
+	// cards := newDeckFromFile("my_cards")
+	// cards.print()
+	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
+	// deal the cards
+	// hand, remainingCards := deal(cards, 5)
+
+	// cards.print()
+	// hand.print()
+	// remainingCards.print()
+
+	// //////////////////////////////////////////////////
+	// convert the deck to string
+	// fmt.Println(cards.toString())
+	// //////////////////////////////////////////////////
+
+	// //////////////////////////////////////////////////
+	// save the deck to a file
+	// cards.saveToFile("my_cards")
+	// //////////////////////////////////////////////////
 
 	// //////////////////////////////////////////////////
 	// iterate over the slice
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
 
 	// fmt.Println(cards)
+
+	// //////////////////////////////////////////////////
+	//  type convertion in go => convert a value from one type to another
+	//  here we take a string value and convert it to a byte slice
+	//  if we look at printed value, it's a byte slice
+	// greeting := "Hi there!"
+	// fmt.Println([]byte(greeting))
+
+	// //////////////////////////////////////////////////
 }
 
 // //////////////////////////////////////////////////
 // define a new function
 
-func newCard() string {
-	return "Five of Diamonds"
-}
+// func newCard() string {
+// 	return "Five of Diamonds"
+// }
